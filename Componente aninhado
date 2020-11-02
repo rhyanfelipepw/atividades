@@ -1,0 +1,36 @@
+import React from 'react';
+import './Assinaturas.css';
+import Footer from '../../Components/Footer/Footer';
+import { ReactComponent as Banner } from '../../Components/Assinaturas/banner-assinatura.svg';
+import { Link } from 'react-router-dom';
+import Botao from '../../Components/Botao/botao';
+export default function Assinaturas() {
+  return ( 
+    <>
+    <div className='body-assinaturas'>
+      <div className='cardteste'>
+        <ul>
+          <li>
+              <Banner />
+          </li>
+          <li>
+           <span>Frete grátis com valor a partir de R$ 25,00 em compra mínima.</span>
+          </li>
+          <li>
+            <span><b>Disponível em Foz do Iguaçu</b></span>
+          </li>
+          <li className="butt">
+           <Link to='/Assinaturap2'>
+              <Botao />
+          </Link>
+          
+            </li>
+        </ul>
+        
+      </div>
+
+    </div>
+    <Footer />
+    </>
+  );
+}
