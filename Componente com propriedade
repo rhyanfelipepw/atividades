@@ -1,0 +1,17 @@
+import React from 'react';
+import './botao.css';
+
+
+function botaoteste(props){
+    return(
+        <button>{props.label}</button>
+    );
+}
+
+export default botaoteste;
+
+
+
+<Link to='/Assinaturap2'>
+                  <botaoteste label="Assine Agora"  />
+          </Link>
