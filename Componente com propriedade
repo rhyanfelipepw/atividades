@@ -1,0 +1,35 @@
+import React from 'react';
+import './App.css';
+//ROTAS
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+
+//COMPONENTES
+import Navbar from './Components/Navbar/Navbar';
+//PAGES
+import Inicio from './Pages/Inicio/Inicio';
+import Produtos from './Pages/Produtos/Produtos';
+import Manifesto from './Pages/Manifesto/Manifesto';
+import Assinaturas from './Pages/Assinaturas/Assinaturas';
+import Assinaturap2 from './Pages/Assinaturas/Assinaturasp2';
+import Assinaturap3 from './Pages/Assinaturas/Assinaturap3';
+function App() {
+  return (
+    <>
+      <Router>
+        <Navbar />
+        <Switch>
+          <Route path='/' exact component={Inicio} />
+          <Route path='/Produtos' component={Produtos} />
+          <Route path='/Manifesto' component={Manifesto} />
+          <Route path='/Assinaturas' component={Assinaturas} />
+          <Route path='/Assinaturap2' component={Assinaturap2} />
+          <Route path='/Assinaturap3' component={Assinaturap3} />
+
+        </Switch>
+      </Router>
+      
+    </>
+  );
+}
+
+export default App;
